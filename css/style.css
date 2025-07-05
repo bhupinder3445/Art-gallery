@@ -1,0 +1,160 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    background: #007BFF;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 30px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Tables */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.styled-table thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #e9f0fb;
+}
+
+/* Forms */
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+button,
+.button {
+    background-color: #007BFF;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message */
+p.error {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 18px;
+    }
+}
